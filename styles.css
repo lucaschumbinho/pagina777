@@ -1,305 +1,149 @@
-/* Estilos gerais */
+/* Estilo para o corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Estilos para a barra de navegação superior */
+/* Estilo para a barra de navegação superior */
 .navbar-top {
-    background-color: #333;
-    color: #fff;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-.navbar-top a {
-    color: #fff;
-    text-decoration: none;
+.site-brand h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }
 
-/* Estilos para os ícones na barra de navegação */
-.navbar-top i {
-    margin-right: 5px;
+.side-nav-panel-left, .side-nav-panel-right {
+  margin: 0;
+  padding: 0;
 }
 
-/* Estilos para o slider */
+.side-nav-left, .side-nav-right {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+/* Estilo para o slider */
 .slider {
-    position: relative;
+  position: relative;
+  overflow: hidden;
 }
 
-.slider img {
-    width: 100%;
-    height: auto;
+.slides {
+  display: none;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
 }
 
 .caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
 }
 
 .caption h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
 }
 
 .caption h4 {
-    font-size: 18px;
-    margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .button-default {
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .button-default:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
-/* Estilos para a seção de serviços */
+/* Estilo para a seção de serviços */
 .services {
-    background-color: #fff;
-    padding: 40px 0;
+  background-color: #fff;
+  padding: 40px 0;
 }
 
 .services h5 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-top: 10px;
 }
 
 .services p {
-    font-size: 16px;
-    margin-bottom: 20px;
+  font-size: 16px;
+  color: #777;
 }
 
-/* Estilos para a seção de captura de tela */
-.screenshot {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
+.services .col {
+  text-align: center;
+  padding: 20px;
 }
 
-.screenshot p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
+/* Adicione mais estilos conforme necessário para outras seções */
 
-/* Estilos para a seção de recursos */
-.features {
-    background-color: #fff;
-    padding: 40px 0;
-}
-
-.features h4 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.tagline {
-    font-size: 16px;
-    margin-bottom: 40px;
-}
-
-.features .row {
-    margin-bottom: 40px;
-}
-
-.features h5 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.features p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.features .button-default {
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.features .button-default:hover {
-    background-color: #555;
-}
-
-/* Estilos para a seção da equipe */
-.team-front {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0;
-}
-
-.team h4 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.team img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.team-details h5 {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.team-details span {
-    font-size: 14px;
-    color: #999;
-    margin-bottom: 20px;
-}
-
-.team-details ul {
-    list-style: none;
-    padding: 0;
-}
-
-.team-details ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-/* Estilos para a seção de citação */
-.quote {
-    background-color: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.quote h5 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.quote p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.quote .button-default {
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.quote .button-default:hover {
-    background-color: #555;
-}
-
-/* Estilos para a seção de depoimentos */
-.testimonial {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.testimonial .item {
-    padding: 20px;
-}
-
-.testimonial .item i {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.testimonial p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-.testimonial h6 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-/* Estilos para a seção de últimas notícias */
-.latest-news {
-    background-color: #fff;
-    padding: 40px 0;
-}
-.latest-news h4 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-.latest-news .content {
-    padding: 20px;
-    background-color: #f0f0f0;
-    margin-bottom: 20px;
-}
-.latest-news img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-.latest-news h5 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.latest-news .post p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-.latest-news .post a {
-    text-decoration: none;
-    color: #333;
-}
-.latest-news .post a:hover {
-    color: #555;
-}
-/* Estilos para o rodapé */
+/* Estilo para o rodapé */
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
-.footer h6 {
-    font-size: 24px;
-    margin-bottom: 10px;
+
+.about-us-foot h6 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
-.footer p {
-    font-size: 16px;
-    margin-bottom: 20px;
+
+.social-media a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
 }
-.footer .social-media a {
-    font-size: 24px;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #fff;
+
+.social-media a:hover {
+  color: #aaa;
 }
-.footer .social-media a:hover {
-    color: #999;
+
+/* Estilo para os botões de leitura mais */
+.button-default {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
 }
-.footer .copyright span {
-    font-size: 14px;
+
+.button-default:hover {
+  background-color: #555;
 }
